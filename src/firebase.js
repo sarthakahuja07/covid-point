@@ -1,3 +1,5 @@
+import firebase from 'firebase';
+
 var firebaseConfig = {
     apiKey: "AIzaSyAI0UF42U4MBNTBp-IHqXfnZx_szSWSSl0",
     authDomain: "covid-point-79b5e.firebaseapp.com",
