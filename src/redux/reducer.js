@@ -1,18 +1,22 @@
 import * as ActionType from './actionTypes';
 const intitalState = {
-    test: 'test'
+    toggled: false
 }
 
 export const reducer = (state = intitalState, action) => {
     switch (action.type) {
-        case ActionType.TEST_ACTION:
+        case ActionType.TOGGLE:
             {
-                return state
+                return {
+                    ...state, toggled: !state.toggled
+                }
             }
 
         default:
             {
-                return state
+                return {
+                    ...state
+                }
             }
     }
 }

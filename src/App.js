@@ -7,7 +7,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <Main />
       </div>
     </BrowserRouter>

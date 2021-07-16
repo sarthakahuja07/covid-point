@@ -1,10 +1,20 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { sidebarToggle } from '../redux/actionCreator';
+import { FaBars } from 'react-icons/fa';
 
 function Home() {
+    const dispatch = useDispatch()
+
     return (
-        <div>
-            <h1>home</h1>
-        </div>
+        <React.Fragment>
+            <div className="btn-toggle" onClick={() => dispatch(sidebarToggle())}>
+                <FaBars />
+            </div>
+            <div>
+                <h1>hii</h1>
+            </div>
+        </React.Fragment>
     )
 }
 
