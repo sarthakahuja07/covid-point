@@ -24,7 +24,7 @@ function Sidebar() {
         <ProSidebar
             collapsed={collapsed}
             toggled={toggled}
-            breakPoint="md"
+            breakPoint="sm"
             onToggle={handleToggleSidebar}
         >
             <SidebarHeader>
@@ -44,13 +44,16 @@ function Sidebar() {
                 </div>
             </SidebarHeader>
             <SidebarContent>
-                <Menu iconShape="circle">
-                    <MenuItem icon={<FaGem />}> comp </MenuItem>
-                    <MenuItem icon={<FaGem />}> comp </MenuItem>
-                    <MenuItem icon={<FaGem />}> comp </MenuItem>
-                    <MenuItem icon={<FaGem />}> comp </MenuItem>
-                    <MenuItem icon={<FaGem />}> comp </MenuItem>
-                    <MenuItem icon={<FaGem />}> comp </MenuItem>
+                <Menu >
+                    <MenuItem icon={<FaGem />}> Home </MenuItem>
+                    <MenuItem icon={<FaGem />}> Vaccine </MenuItem>
+                    <MenuItem icon={<FaGem />}> Data </MenuItem>
+                    <MenuItem icon={<FaGem />}> Resources </MenuItem>
+                    <MenuItem icon={<FaGem />}> Emergency </MenuItem>
+                </Menu>
+                <Menu className='bottom__menu'>
+                    <MenuItem icon={<FaGem />}>  </MenuItem>
+                    <MenuItem icon={<FaGem />}>  </MenuItem>    
                 </Menu>
 
             </SidebarContent>

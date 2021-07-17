@@ -1,3 +1,14 @@
+.pro-sidebar > .pro-sidebar-inner {
+  background: #161616;
+  border-radius: 0px 24px 24px 0px;
+}
+.pro-sidebar-content{
+  position: relative;
+}
+.bottom__menu{
+  position: absolute;
+  bottom: 0;
+}
 .sidebar__header {
   padding: 24px;
   text-transform: uppercase;
@@ -60,23 +71,35 @@
   padding: 0;
 }
 
-
-.btn-toggle{
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    background: #353535;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    display: none;
+.btn-toggle {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: #353535;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  display: none;
 }
 
-@media (max-width:768px) {
-    .btn-toggle {
-      display: flex;
-    }
+.pro-inner-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.2px;
+  line-height: 29px;
+  color: #ffffff;
+  text-align: center;
+
+}
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+  margin-right: 30px;
+}
+
+@media (max-width: 576px) {
+  .btn-toggle {
+    display: flex;
+  }
 }
